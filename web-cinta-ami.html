@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Untuk Amin Princess 💖</title>
+<style>
+:root{--bg1:#ffe4ef;--bg2:#ffc2da;--card:#fff;--pink:#ff5c9d;--deep:#d81b60;--text:#6a1b3d;--soft:#fff0f6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#3a1028;--bg2:#5c1a3f;--card:#4a1633;--pink:#ff7eb3;--deep:#ffa6c9;--text:#ffe4ef;--soft:#5c1a3f}}
+:root[data-theme="dark"]{--bg1:#3a1028;--bg2:#5c1a3f;--card:#4a1633;--pink:#ff7eb3;--deep:#ffa6c9;--text:#ffe4ef;--soft:#5c1a3f}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;font-family:"Poppins","Segoe UI",system-ui,sans-serif;color:var(--text);background:linear-gradient(160deg,var(--bg1),var(--bg2));background-attachment:fixed;overflow-x:hidden}
+nav{display:flex;justify-content:center;gap:8px;padding:14px 10px;position:sticky;top:0;z-index:5;backdrop-filter:blur(8px)}
+nav button{border:0;background:var(--card);color:var(--deep);font:600 14px inherit;font-family:inherit;padding:10px 16px;border-radius:99px;cursor:pointer;box-shadow:0 3px 10px #ff5c9d44}
+nav button.on{background:var(--pink);color:#fff}
+main{max-width:640px;margin:0 auto;padding:10px 16px 60px}
+.page{display:none;animation:in .5s}.page.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.card{background:var(--card);border-radius:24px;padding:24px;box-shadow:0 10px 30px #ff5c9d33;margin-bottom:16px}
+h1{font-family:"Georgia",serif;font-size:2.1rem;margin:.2em 0;color:var(--deep);text-align:center}
+h2{color:var(--deep);margin-top:0}
+p{line-height:1.6}
+.hero{text-align:center}
+.big{font-size:4.5rem;animation:beat 1.2s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+.btn{border:0;background:linear-gradient(135deg,#ff7eb3,#ff3d86);color:#fff;font:600 16px inherit;font-family:inherit;padding:12px 24px;border-radius:99px;cursor:pointer;box-shadow:0 6px 16px #ff3d8666;transition:transform .15s}
+.btn:active{transform:scale(.95)}
+.chal{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.chal .st{font-size:1.6rem}
+.badge{font-size:.8rem;background:var(--soft);color:var(--deep);padding:4px 10px;border-radius:99px}
+#arena{position:relative;height:300px;background:var(--soft);border-radius:18px;overflow:hidden;margin:12px 0;touch-action:manipulation}
+.fall{position:absolute;top:-40px;font-size:2rem;cursor:pointer;user-select:none;animation:drop linear forwards}
+@keyframes drop{to{transform:translateY(350px)}}
+.opt{display:block;width:100%;margin:8px 0;padding:12px;border-radius:14px;border:2px solid var(--pink);background:var(--soft);color:var(--text);font:500 15px inherit;font-family:inherit;cursor:pointer;text-align:left}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}
+.tile{aspect-ratio:1;border-radius:14px;border:0;background:var(--pink);color:#fff;font-size:1.8rem;cursor:pointer;transition:transform .3s}
+.tile.open{background:var(--soft)}.tile.done{background:#ffd1e3;opacity:.8}
+.msgs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.env{background:var(--card);border-radius:20px;padding:22px 10px;text-align:center;cursor:pointer;box-shadow:0 6px 18px #ff5c9d33;border:0;color:var(--text);font-family:inherit;font-weight:600}
+.env .i{font-size:2.6rem;display:block}
+.env.lock{opacity:.55;cursor:not-allowed}
+#modal{position:fixed;inset:0;background:#0007;display:none;align-items:center;justify-content:center;padding:20px;z-index:20}
+#modal.on{display:flex}
+.letter{background:var(--card);border-radius:24px;padding:28px;max-width:420px;width:100%;animation:pop .4s;text-align:center}
+@keyframes pop{from{transform:scale(.6) rotate(-4deg);opacity:0}to{transform:none;opacity:1}}
+.letter p{font-family:"Georgia",serif;font-size:1.1rem;white-space:pre-line}
+.heart{position:fixed;bottom:-30px;pointer-events:none;animation:up 4s linear forwards;z-index:30}
+@keyframes up{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+.bar{height:10px;background:var(--soft);border-radius:99px;overflow:hidden;margin:10px 0}
+.bar i{display:block;height:100%;width:0;background:var(--pink);transition:width .4s}
+</style>
+</head>
+<body>
+<nav>
+  <button data-p="home" class="on">🏠 Beranda</button>
+  <button data-p="chal">🎯 Tantangan</button>
+  <button data-p="msg">💌 Pesan</button>
+</nav>
+<main>
+  <section id="home" class="page on">
+    <div class="card hero">
+      <div class="big">💖</div>
+      <h1>Untuk Amin Princess</h1>
+      <p>Hai sayang 🌸 Rasya bikin web kecil ini khusus buat kamu. Selesaikan tiga tantangan lucu untuk membuka semua pesan cintaku ya!</p>
+      <button class="btn" onclick="go('chal')">Mulai Tantangan ✨</button>
+    </div>
+    <div class="card"><b>Progres kamu</b><div class="bar"><i id="pbar"></i></div><span id="ptxt" class="badge"></span></div>
+  </section>
+
+  <section id="chal" class="page">
+    <div class="card">
+      <div class="chal"><h2>1. Tangkap Hati 💗</h2><span class="st" id="s1">🔒</span></div>
+      <p>Klik 10 hati yang jatuh sebelum hilang!</p>
+      <div id="arena"></div>
+      <button class="btn" id="start1">Mulai</button> <span class="badge" id="c1">0/10</span>
+    </div>
+    <div class="card">
+      <div class="chal"><h2>2. Kuis Cinta 💭</h2><span class="st" id="s2">🔒</span></div>
+      <p id="q"></p><div id="opts"></div><p id="qr"></p>
+    </div>
+    <div class="card">
+      <div class="chal"><h2>3. Cocokkan Kartu 🃏</h2><span class="st" id="s3">🔒</span></div>
+      <p>Temukan semua pasangan emoji!</p>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section id="msg" class="page">
+    <div class="card"><h2>Kotak Pesan 💌</h2>
+      <p>Setiap tantangan yang selesai membuka satu pesan baru.</p>
+      <div class="msgs" id="msgs"></div>
+    </div>
+  </section>
+</main>
+
+<div id="modal"><div class="letter"><div style="font-size:3rem">💌</div><p id="mt"></p><button class="btn" onclick="closeM()">Tutup 💕</button></div></div>
+
+<script>
+// ===== Ubah isi pesan di sini =====
+const NAMA = "Amin Princess";
+const PENGIRIM = "Rasya";
+const PESAN = [
+  "Hai " + NAMA + ", terima kasih sudah hadir di hidupku. Kamu bikin hari-hariku jadi lebih berwarna. 🌷",
+  "Senyummu itu obat paling manjur buat capekku. Jangan lupa tersenyum hari ini ya! 😊",
+  "Aku mungkin tidak sempurna, tapi aku akan selalu berusaha jadi yang terbaik buat kamu. 💪💗",
+  "Kamu adalah putri di hatiku, " + NAMA + ". I love you, hari ini, besok, dan selamanya. 👑💖"
+];
+const KUIS = {t:"Siapa yang paling sayang sama " + NAMA + " di dunia ini?", o:[["Aku dong! 😎",1],["Kucing tetangga 🐱",0],["Aku, banget banget! 🥰",1],["Nggak tahu 🤷",0]]};
+
+// ===== State =====
+let done = [false,false,false];
+try{const s=JSON.parse(localStorage.getItem("ami")||"null");if(Array.isArray(s)&&s.length===3)done=s}catch(e){}
+const $=id=>document.getElementById(id);
+function save(){try{localStorage.setItem("ami",JSON.stringify(done))}catch(e){}}
+function go(p){document.querySelectorAll(".page").forEach(x=>x.classList.toggle("on",x.id===p));document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.p===p));scrollTo(0,0)}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>go(b.dataset.p));
+
+function render(){
+  const n=done.filter(Boolean).length;
+  $("pbar").style.width=(n/3*100)+"%";
+  $("ptxt").textContent=n+" dari 3 tantangan selesai";
+  done.forEach((d,i)=>$("s"+(i+1)).textContent=d?"✅":"🔒");
+  const box=$("msgs");box.innerHTML="";
+  PESAN.forEach((m,i)=>{
+    const open=i<=n; const b=document.createElement("button");
+    b.className="env"+(open?"":" lock");
+    b.innerHTML='<span class="i">'+(open?"💌":"🔒")+'</span>Pesan '+(i+1);
+    b.onclick=()=>{if(open){$("mt").textContent=m+"\n\n— "+PENGIRIM+" 💕";$("modal").classList.add("on");rain()}else alert("Selesaikan tantangan dulu ya 💕")};
+    box.appendChild(b);
+  });
+}
+function closeM(){$("modal").classList.remove("on")}
+function finish(i){if(!done[i]){done[i]=true;save();render();rain();const n=done.filter(Boolean).length;setTimeout(()=>{$("mt").textContent="🎉 Tantangan selesai!\n\n"+PESAN[n]+"\n\n— "+PENGIRIM+" 💕";$("modal").classList.add("on")},500)}}
+function rain(){for(let i=0;i<14;i++){const h=document.createElement("div");h.className="heart";h.textContent=["💖","💗","🌸","💕"][i%4];h.style.left=Math.random()*95+"vw";h.style.fontSize=(18+Math.random()*22)+"px";h.style.animationDelay=Math.random()*.8+"s";document.body.appendChild(h);setTimeout(()=>h.remove(),5000)}}
+
+// ===== Tantangan 1 =====
+let cnt=0,timer=null;
+$("start1").onclick=()=>{
+  cnt=0;$("c1").textContent="0/10";$("arena").innerHTML="";clearInterval(timer);
+  timer=setInterval(()=>{
+    const h=document.createElement("div");h.className="fall";h.textContent="💗";
+    h.style.left=Math.random()*85+"%";h.style.animationDuration=(2+Math.random()*1.5)+"s";
+    h.onclick=()=>{h.remove();cnt++;$("c1").textContent=cnt+"/10";if(cnt>=10){clearInterval(timer);$("arena").innerHTML="";finish(0)}};
+    $("arena").appendChild(h);setTimeout(()=>h.remove(),3800);
+  },600);
+};
+
+// ===== Tantangan 2 =====
+$("q").textContent=KUIS.t;
+KUIS.o.forEach(([t,ok])=>{
+  const b=document.createElement("button");b.className="opt";b.textContent=t;
+  b.onclick=()=>{if(ok){$("qr").textContent="Betul banget! Kamu pintar, sayang 💕";finish(1)}else $("qr").textContent="Hmm, jawabannya kurang tepat. Coba lagi ya 😜"};
+  $("opts").appendChild(b);
+});
+
+// ===== Tantangan 3 =====
+(function(){
+  const e=["💖","🌸","👑","🍫"];let cards=[...e,...e].sort(()=>Math.random()-.5),first=null,lock=false,match=0;
+  cards.forEach(v=>{
+    const t=document.createElement("button");t.className="tile";t.textContent="❓";
+    t.onclick=()=>{
+      if(lock||t.classList.contains("open")||t.classList.contains("done"))return;
+      t.classList.add("open");t.textContent=v;
+      if(!first){first=t;return}
+      if(first.textContent===v){first.classList.replace("open","done");t.classList.replace("open","done");first=null;if(++match===4)finish(2)}
+      else{lock=true;const f=first;first=null;setTimeout(()=>{f.classList.remove("open");t.classList.remove("open");f.textContent="❓";t.textContent="❓";lock=false},700)}
+    };
+    $("grid").appendChild(t);
+  });
+})();
+
+render();
+</script>
+</body>
+</html>
